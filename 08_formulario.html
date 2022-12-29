@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+</body>
+<form action="">
+
+    <!-- Caja de Texto -->
+    <div>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" id="nombre">
+    </div>
+
+    <div>
+        <label for="email">Correo</label><br>
+        <input type="email" name="email" id="email" placeholder="Correo electronico" required>
+    </div>
+
+    <div>
+        <label for="tel">Telefono</label> <br>
+        <input type="tel" name="telefono" id="tel" pattern ="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="000-000-000">
+    </div>
+
+    <!-- Area de texto -->
+    <div>
+        <label for="msj">Mensaje</label><br>
+        <textarea name="msj" id="msj" cols="20" rows="10"></textarea>
+    </div>
+
+    <!-- Checkbox -->
+    <div>
+        <p>Te gustaria recibir el boletin de noticias?</p>
+        <div>
+            <label for="promo">Promociones</label>
+            <input type="checkbox" name="promo" id="promo">
+        </div>
+        <div>
+            <label for="trabajo">Ofertas de Trabajo</label>
+            <input type="checkbox" name="trabajo" id="trabajo">
+        </div>
+    </div>
+
+    <!-- Boton de opcion -->
+    <div>
+        <p>Te gustaria suscribirte?</p>
+        <div>
+            <label for="si">SI</label>
+            <input type="radio" name="pregunta" id="si" value="si" checked>
+            <label for="no">NO</label>
+            <input type="radio" name="pregunta" id="no">
+        </div>
+    </div>
+
+    <!-- Seleccion Unica -->
+    <div>
+        <label for="trabajo">Situacion Laboral</label>
+        <select name="trabajo" id="trabajo">
+            <option value="completo">tiempo completo</option>
+            <option value="parcial">tiempo parcial</option>
+            <option value="desocupado">desocupado</option>
+        </select>
+    </div>
+
+
+    <!-- Seleccion Multiple -->
+    <div>
+        <label for="local">LOCALES</label><br>
+        <select multiple name="" id="local">
+            <option value="norte">norte</option>
+            <option value="suscribirte?">sur</option>
+            <option value="centro">centro</option>
+        </select>
+    </div>
+
+    <!-- Fechas -->
+    <div>
+        <label for="disp">DISPONIBILIDAD</label>
+        <input type="date" name="disp" id="disp">
+    </div>
+
+    <!-- Numeros -->
+
+    <div>
+        <label for="sueldo">SUELDO</label><br>
+        <input type="number" name="sueldo" id="sueldo">
+    </div>
+    <br>
+
+    <!-- BOTONES -->
+
+    <div>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="RESET">
+        <button>BOTON</button>
+    </div>
+
+</form>
+</html>
